@@ -1,7 +1,7 @@
 // frequency counter helps to go away from nested loops O(n^2) to 2 sequential loops O(n)
 // good for comparison data - arrays, objects, ...
 
-
+// TASK:
 // letters from 1 word can form another word
 
 function isAnagram(str1, str2) {
