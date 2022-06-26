@@ -1,4 +1,4 @@
-// TLDR: we select the smallest element and put it at the beginning
+// TLDR: we select the smallest element and put it at the beginning, swapping with original value at beginning
 
 // like bubbleSort, but instead of placing large values into sorted position, it places there small values
 // we start iteration from beginning to the end,

@@ -61,6 +61,11 @@ function maxSubArraySumRefactor(arr, sequentialNumber) {
     return maxSum;
 }
 
+// TLDR:
+// difference between 2 approaches:
+// instead of calculating of window sum each time,
+// while moving the window, we each time remove its left corner and add the new right one
+
 // explanation:
 // we have an array: [2, 3, 4, 5, 6, 7]
 // in comparison to 1-st approach where we were summing and comparing all numbers for each iteration:

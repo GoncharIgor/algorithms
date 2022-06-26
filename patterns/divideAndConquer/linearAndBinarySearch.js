@@ -30,11 +30,11 @@ function findIndexBinary(arr, itemValue) {
 
     while (min < max) {
         let middleIndex = Math.floor((min + max) / 2); // (Math.floor(5.95)); => 5
-        const currentElement = arr[middleIndex];
+        const currentMiddleElement = arr[middleIndex];
 
-        if (arr[middleIndex] < itemValue) {
+        if (currentMiddleElement < itemValue) {
             min = middleIndex + 1;
-        } else if (arr[middleIndex] > itemValue) {
+        } else if (currentMiddleElement > itemValue) {
             max = middleIndex - 1;
         } else {
             return middleIndex;

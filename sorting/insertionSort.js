@@ -1,4 +1,6 @@
 // Builds up a sort by gradually creating a larger left portion which is always sorted
+// each value goes down and moves left, to the samaller values
+// if value is bigger, than left one - do nothing (it has to be pushed gradually to the right)
 
 // time complexity - O(n^2)
 // it may be good for almost sorted data, because then we may skip the check from inner loop:

@@ -22,10 +22,11 @@ function getHowOftenSubstrMatch(longStr, shortStr) {
 
         for (let j = 0; j < shortStr.length; j++) {
             // arrFromStr[i + j] - we need to compare ongoing substring indexes with ALSO ONGOING outer string indexes
-            if (longStr[i + j] !== shortStr[j]) break;
+            if (longStr[i + j] !== shortStr[j]) break; // if chars don't match - we jump out of the inner loop
 
             if (j === shortStr.length - 1) {
                 // we increase count only if the last char of substring matches
+                // It means we successfully did all the previous checks and didn't jump out from the inner loop before
                 totalMatchCount++;
             }
         }

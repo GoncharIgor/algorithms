@@ -1,4 +1,8 @@
-function countdown(num) {
+// recursion is good for:
+// - working with tree structures
+// - the same operation with slowly increasing/decreasing value
+
+function countdownWithRecursion(num) {
     if (num <= 0) {
         console.log('Finished!');
         return;
@@ -6,7 +10,7 @@ function countdown(num) {
 
     console.log(num);
     num--;
-    countdown(num--);
+    countdownWithRecursion(num--);
 }
 
 

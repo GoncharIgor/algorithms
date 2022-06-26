@@ -29,3 +29,7 @@ e.g:
 - at the beginning - unshift() - O(N)
 the same for removing:
 - pop() and shift()
+
+
+# Visualization of sorting
+https://visualgo.net/en

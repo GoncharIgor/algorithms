@@ -1,3 +1,10 @@
+// When to use Two-pointer technique: for solving array problems
+// - for finding two numbers in an array that satisfy a certain condition
+// Can be used in 2 ways:
+// 2 pointers go from start, with 1 "exploration" pointer
+// 2 pointers come to each other from beginning and end of array
+// used with (while) loops
+
 // With Set() approach
 
 function areThereDuplicates(...args) {
@@ -32,6 +39,7 @@ function areThereDuplicatesMultiplePointers(...args) {
     let next = 1;
 
     while (next < args.length) {
+        // because array sorted - we can see if current value will be the same with next value
         if (args[start] === args[next]) {
             return true;
         }

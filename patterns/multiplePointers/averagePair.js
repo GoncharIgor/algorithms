@@ -1,6 +1,6 @@
 // TASK:
 // given sorted array
-// check if 1 or more number pairs match target average
+// check if 1 or more numbers pairs match target average
 
 
 // works with unsorted array

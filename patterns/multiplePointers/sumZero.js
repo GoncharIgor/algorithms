@@ -27,7 +27,8 @@ const res4 = sumZeroNotPerformant([-4, -3, -2, -1, 0, 1, 2, 5]); // [-2 ,2]
 // time complexity - O(N)
 // space complexity - O(1)
 function sumZeroBetter(arr) {
-    if (arr[0] > 0) return undefined;
+    if (arr[0] > 0) return undefined; // all positive numbers - we can't have zero as sum
+    if (arr[arr.length - 1] < 0) return undefined; // all negative numbers
 
     // creation of 2 pointers
     let left = 0;
